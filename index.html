@@ -1,0 +1,675 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Anime Page</title>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="css/anime_page.css">
+    <script src="js/sorttable.js"></script>
+</head>
+
+<body>
+    <div>
+        <ul id="menu">
+            <li><a href="#" id="home-button">Home</a></li>
+            <li id="dropdown-animelist" class="dropdown">
+                <a href="javascript:void(0)" class="dropdown-button">Anime List</a>
+                <div class="dropdown-content">
+                    <a href="#" id="completed-button">Completed</a>
+                    <a href="#" id="watching-button">Watching</a>
+                    <a href="#" id="plantowatch-button">Plan to watch</a>
+                </div>
+            </li>
+            <li><a>Page</a></li>
+        </ul>
+    </div>
+
+    <div id="home">
+        <p>Test hallo</p>
+    </div>
+
+    <div id="completed">
+        <table id="myTable" class="sortable">
+            <caption>Anime I have watched</caption>
+            <thead>
+                <tr>
+                    <th class="sorttable_nosort" id="img-head">Image</th>
+                    <th>Title</th>
+                    <th>Score</th>
+                    <th>Episodes watched</th>
+                    <th>Total episodes</th>
+                </tr>
+            </thead>
+
+            <tbody>
+                <tr>
+                    <td id="sg"><a href="img/table-images-hq/steins-gate.bmp"><img src="img/table-images/steins-gate.bmp"
+                                class="table-img"></td>
+                    <td><span onclick="showSteinsGateInfo();" class="title">Steins;Gate</span></td>
+                    <td>10</td>
+                    <td>24</td>
+                    <td>24</td>
+                </tr>
+                <tr>
+                    <td id="aot"><a href="img/table-images-hq/attack-on-titan.bmp"><img src="img/table-images/attack-on-titan.bmp"
+                                class="table-img"></td>
+                    <td><span onclick="showAttackOnTitanInfo();" class="title">Attack on Titan</span></td>
+                    <td>9</td>
+                    <td>25</td>
+                    <td>25</td>
+                </tr>
+                <tr>
+                    <td><a href="img/table-images-hq/death-note.bmp"><img src="img/table-images/death-note.bmp" class="table-img"></td>
+                    <td><span onclick="showDeathNoteInfo();" class="title">Death Note</span></td>
+                    <td>9</td>
+                    <td>37</td>
+                    <td>37</td>
+                </tr>
+                <tr>
+                    <td><a href="img/table-images-hq/erased.bmp"><img src="img/table-images/erased.bmp" onclick=""
+                                class="table-img"></td>
+                    <td><span onclick="showErasedInfo();" class="title">ERASED</span></td>
+                    <td>9</td>
+                    <td>12</td>
+                    <td>12</td>
+                </tr>
+                <tr>
+                    <td><a href="img/table-images-hq/grand-blue.bmp"><img src="img/table-images/grand-blue.bmp" class="table-img"></td>
+                    <td><span onclick="showGrandBlueInfo();" class="title">Grand Blue</span></td>
+                    <td>9</td>
+                    <td>12</td>
+                    <td>12</td>
+                </tr>
+                <tr>
+                    <td><a href="img/table-images-hq/kimi-no-na-wa.bmp"><img src="img/table-images/kimi-no-na-wa.bmp"
+                                class="table-img"></td>
+                    <td><span onclick="showKimiNoNaWaInfo();" class="title">Kimi no Na wa.</span></td>
+                    <td>9</td>
+                    <td>1</td>
+                    <td>1</td>
+                </tr>
+                <tr>
+                    <td><a href="img/table-images-hq/3-gatsu-no-lion.bmp"><img src="img/table-images/3-gatsu-no-lion.bmp"
+                                class="table-img"></td>
+                    <td><span onclick="show3GatsuNoLionInfo();" class="title">3-Gatsu no Lion</span></td>
+                    <td>8</td>
+                    <td>22</td>
+                    <td>22</td>
+                </tr>
+                <tr>
+                    <td><a href="img/table-images-hq/3-gatsu-no-lion-2.bmp"><img src="img/table-images/3-gatsu-no-lion-2.bmp"
+                                class="table-img"></td>
+                    <td><span onclick="show3GatsuNoLion2Info();" class="title">3-Gatsu no Lion 2nd Season</span></td>
+                    <td>8</td>
+                    <td>22</td>
+                    <td>22</td>
+                </tr>
+                <tr>
+                    <td><a href="img/table-images-hq/91-days.bmp"><img src="img/table-images/91-days.bmp" class="table-img"></td>
+                    <td><span onclick="show91DaysInfo();" class="title">91 Days</span></td>
+                    <td>8</td>
+                    <td>12</td>
+                    <td>12</td>
+                </tr>
+                <tr>
+                    <td><a href="img/table-images-hq/assassination-classroom.bmp"><img src="img/table-images/assassination-classroom.bmp"
+                                class="table-img"></td>
+                    <td><span onclick="showAssassinationClassroomInfo();" class="title">Assassination Classroom</span></td>
+                    <td>8</td>
+                    <td>22</td>
+                    <td>22</td>
+                </tr>
+                <tr>
+                    <td><a href="img/table-images-hq/assassination-classroom-2.bmp"><img src="img/table-images/assassination-classroom-2.bmp"
+                                class="table-img"></td>
+                    <td><span onclick="showAssassinationClassroom2Info();" class="title">Assassination Classroom 2nd
+                            Season</span></td>
+                    <td>8</td>
+                    <td>25</td>
+                    <td>25</td>
+                </tr>
+                <tr>
+                    <td><a href="img/table-images-hq/attack-on-titan-2.bmp"><img src="img/table-images/attack-on-titan-2.bmp"
+                                class="table-img"></td>
+                    <td><span onclick="showAttackOnTitan2Info();" class="title">Attack on Titan Season 2</span></td>
+                    <td>8</td>
+                    <td>12</td>
+                    <td>12</td>
+                </tr>
+                <tr>
+                    <td><a href="img/table-images-hq/attack-on-titan-3.bmp"><img src="img/table-images/attack-on-titan-3.bmp"
+                                class="table-img"></td>
+                    <td><span onclick="showAttackOnTitan3Info();" class="title">Attack on Titan Season 3</span></td>
+                    <td>8</td>
+                    <td>12</td>
+                    <td>12</td>
+                </tr>
+                <tr>
+                    <td><a href="img/table-images-hq/boku-no-hero-academia.bmp"><img src="img/table-images/boku-no-hero-academia.bmp"
+                                class="table-img"></a></td>
+                    <td><span onclick="showBokuNoHeroAcademiaInfo();" class="title">Boku no Hero Academia</span></td>
+                    <td>8</td>
+                    <td>13</td>
+                    <td>13</td>
+                </tr>
+                <tr>
+                    <td><a href="img/table-images-hq/boku-no-hero-academia-2.bmp"><img src="img/table-images/boku-no-hero-academia-2.bmp"
+                                class="table-img"></a></td>
+                    <td><span onclick="showBokuNoHeroAcademia2Info();" class="title">Boku no Hero Academia 2nd Season</span></td>
+                    <td>8</td>
+                    <td>25</td>
+                    <td>25</td>
+                </tr>
+                <tr>
+                    <td><a href="img/table-images-hq/boku-no-hero-academia-3.bmp"><img src="img/table-images/boku-no-hero-academia-3.bmp"
+                                class="table-img"></a></td>
+                    <td><span onclick="showBokuNoHeroAcademia3Info();" class="title">Boku no Hero Academia 3rd Season</span></td>
+                    <td>8</td>
+                    <td>25</td>
+                    <td>25</td>
+                </tr>
+                <tr>
+                    <td><a href="img/table-images-hq/boku-no-hero-academia-2.bmp"><img src="img/table-images/chio-chan-no-tsuugakuro.bmp"
+                                class="table-img"></a></td>
+                    <td><span onclick="showChioChanNoTsuugakuroInfo();" class="title">Chio-chan no Tsuugakuro</span></td>
+                    <td>8</td>
+                    <td>12</td>
+                    <td>12</td>
+                </tr>
+                <tr>
+                    <td><a href="img/table-images-hq/boku-no-hero-academia-2.bmp"><img src="img/table-images/classroom-of-the-elite.bmp"
+                                class="table-img"></a></td>
+                    <td><span onclick="showClassroomOfTheEliteInfo();" class="title">Classroom of the Elite</span></td>
+                    <td>8</td>
+                    <td>12</td>
+                    <td>12</td>
+                </tr>
+                <tr>
+                    <td><a href="img/table-images/boku-no-hero-academia-2.bmp"><img src="img/table-images/fullmetal-alchemist-brotherhood.bmp"
+                                class="table-img"></a></td>
+                    <td><span onclick="showFullmetalAlchemistBrotherhoodInfo();" class="title">Fullmetal Alchemist:
+                            Brotherhood</span></td>
+                    <td>8</td>
+                    <td>64</td>
+                    <td>64</td>
+                </tr>
+                <tr>
+                    <td><a href="img/table-images/boku-no-hero-academia-2.bmp"><img src="img/table-images/hyouka.bmp"
+                                class="table-img"></a></td>
+                    <td><span onclick="showHyoukaInfo();" class="title">Hyouka</span></td>
+                    <td>8</td>
+                    <td>22</td>
+                    <td>22</td>
+                </tr>
+                <tr>
+                    <td><a href="img/table-images/boku-no-hero-academia-2.bmp"><img src="img/table-images/inazuma-eleven.bmp"
+                                class="table-img"></a></td>
+                    <td><span onclick="showInazumaElevenInfo();" class="title">Inazuma Eleven</span></td>
+                    <td>8</td>
+                    <td>127</td>
+                    <td>127</td>
+                </tr>
+                <tr>
+                    <td><a href="img/table-images/boku-no-hero-academia-2.bmp"><img src="img/table-images/koe-no-katachi.bmp"
+                                class="table-img"></a></td>
+                    <td><span onclick="showKoeNoKatachiInfo();" class="title">Koe no Katachi</span></td>
+                    <td>8</td>
+                    <td>1</td>
+                    <td>1</td>
+                </tr>
+                <tr>
+                    <td><a href="img/table-images/boku-no-hero-academia-2.bmp"><img src="img/table-images/koutetsujou-no-kabaneri.bmp"
+                                class="table-img"></a></td>
+                    <td><span onclick="showKoutetsujouNoKabaneriInfo();" class="title">Koutetsujou no Kabaneri</span></td>
+                    <td>8</td>
+                    <td>12</td>
+                    <td>12</td>
+                </tr>
+                <tr>
+                    <td><a href="img/table-images/boku-no-hero-academia-2.bmp"><img src="img/table-images/mahoutsukai-no-yome.bmp"
+                                class="table-img"></a></td>
+                    <td><span onclick="showMahoutsukaiNoYomeInfo();" class="title">Mahoutsukai no Yome</span></td>
+                    <td>8</td>
+                    <td>24</td>
+                    <td>24</td>
+                </tr>
+                <tr>
+                    <td><a href="img/table-images/boku-no-hero-academia-2.bmp"><img src="img/table-images/mirai-nikki.bmp"
+                                class="table-img"></a></td>
+                    <td><span onclick="showMiraiNikkiInfo();" class="title">Mirai Nikki</span></td>
+                    <td>8</td>
+                    <td>26</td>
+                    <td>26</td>
+                </tr>
+                <tr>
+                    <td><a href="img/table-images/boku-no-hero-academia-2.bmp"><img src="img/table-images/naruto.bmp"
+                                class="table-img"></a></td>
+                    <td><span onclick="showNarutoInfo();" class="title">Naruto</span></td>
+                    <td>8</td>
+                    <td>220</td>
+                    <td>220</td>
+                </tr>
+                <tr>
+                    <td><a href="img/table-images/boku-no-hero-academia-2.bmp"><img src="img/table-images/naruto-shippuden.bmp"
+                                class="table-img"></a></td>
+                    <td><span onclick="showNarutoShippudenInfo();" class="title">Naruto: Shippuden</span></td>
+                    <td>8</td>
+                    <td>500</td>
+                    <td>500</td>
+                </tr>
+                <tr>
+                    <td><a href="img/table-images/boku-no-hero-academia-2.bmp"><img src="img/table-images/one-outs.bmp"
+                                class="table-img"></a></td>
+                    <td><span onclick="showOneOutsInfo();" class="title">One Outs</span></td>
+                    <td>8</td>
+                    <td>25</td>
+                    <td>25</td>
+                </tr>
+                <tr>
+                    <td><a href="img/table-images/boku-no-hero-academia-2.bmp"><img src="img/table-images/parasyte.bmp"
+                                class="table-img"></a></td>
+                    <td><span onclick="showParasyteInfo();" class="title">Parasyte</span></td>
+                    <td>8</td>
+                    <td>24</td>
+                    <td>24</td>
+                </tr>
+                <tr>
+                    <td><a href="img/table-images/boku-no-hero-academia-2.bmp"><img src="img/table-images/psycho-pass.bmp"
+                                class="table-img"></a></td>
+                    <td><span onclick="showPsychoPassInfo();" class="title">Psycho-Pass</span></td>
+                    <td>8</td>
+                    <td>22</td>
+                    <td>22</td>
+                </tr>
+                <tr>
+                    <td><a href="img/table-images/boku-no-hero-academia-2.bmp"><img src="img/table-images/rainbow.bmp"
+                                class="table-img"></a></td>
+                    <td><span onclick="showRainbowInfo();" class="title">Rainbow</span></td>
+                    <td>8</td>
+                    <td>26</td>
+                    <td>26</td>
+                </tr>
+                <tr>
+                    <td><a href="img/table-images/boku-no-hero-academia-2.bmp"><img src="img/table-images/saiki-kusuo-no-psi-nan.bmp"
+                                class="table-img"></a></td>
+                    <td><span onclick="showSaikiKusuoNoPsiNanInfo();" class="title">Saiki Kusuo no Ψ-nan</span></td>
+                    <td>8</td>
+                    <td>24</td>
+                    <td>24</td>
+                </tr>
+                <tr>
+                    <td><a href="img/table-images/boku-no-hero-academia-2.bmp"><img src="img/table-images/saiki-kusuo-no-psi-nan-2.bmp"
+                                class="table-img"></a></td>
+                    <td><span onclick="showSaikiKusuoNoPsiNan2Info();" class="title">Saiki Kusuo no Ψ-nan 2</span></td>
+                    <td>8</td>
+                    <td>24</td>
+                    <td>24</td>
+                </tr>
+                <tr>
+                    <td><a href="img/table-images/boku-no-hero-academia-2.bmp"><img src="img/table-images/tokyo-ghoul.bmp"
+                                class="table-img"></a></td>
+                    <td><span onclick="showTokyoGhoulInfo();" class="title">Tokyo Ghoul</span></td>
+                    <td>8</td>
+                    <td>12</td>
+                    <td>12</td>
+                </tr>
+                <tr>
+                    <td><a href="img/table-images/boku-no-hero-academia-2.bmp"><img src="img/table-images/tsuki-ga-kirei.bmp"
+                                class="table-img"></a></td>
+                    <td><span onclick="showTsukiGaKireiInfo();" class="title">Tsuki ga Kirei</span></td>
+                    <td>8</td>
+                    <td>12</td>
+                    <td>12</td>
+                </tr>
+                <tr>
+                    <td><a href="img/table-images/boku-no-hero-academia-2.bmp"><img src="img/table-images/violet-evergarden.bmp"
+                                class="table-img"></a></td>
+                    <td><span onclick="showVioletEvergardenInfo();" class="title">Violet Evergarden</span></td>
+                    <td>8</td>
+                    <td>13</td>
+                    <td>13</td>
+                </tr>
+                <tr>
+                    <td><a href="img/table-images/boku-no-hero-academia-2.bmp"><img src="img/table-images/welcome-to-the-nhk.bmp"
+                                class="table-img"></a></td>
+                    <td><span onclick="showWelcomeToTheNHKInfo();" class="title">Welcome to the N.H.K.</span></td>
+                    <td>8</td>
+                    <td>24</td>
+                    <td>24</td>
+                </tr>
+                <tr>
+                    <td><img src="img/table-images/another.bmp" class="table-img"></td>
+                    <td><span onclick="showAnotherInfo();" class="title">Another</span></td>
+                    <td>7</td>
+                    <td>12</td>
+                    <td>12</td>
+                </tr>
+                <tr>
+                    <td><img src="img/table-images/asobi-asobase.bmp" class="table-img"></td>
+                    <td><span onclick="showAsobiAsobaseInfo();" class="title">Asobi Asobase</span></td>
+                    <td>7</td>
+                    <td>12</td>
+                    <td>12</td>
+                </tr>
+                <tr>
+                    <td><img src="img/table-images/btooom.bmp" class="table-img"></td>
+                    <td><span onclick="showBtooomInfo();" class="title">Btooom!</span></td>
+                    <td>7</td>
+                    <td>12</td>
+                    <td>12</td>
+                </tr>
+                <tr>
+                    <td><img src="img/table-images/danganronpa-the-animation.bmp" class="table-img"></td>
+                    <td><span onclick="showDanganronpaTheAnimationInfo();" class="title">Danganronpa: The Animation</span></td>
+                    <td>7</td>
+                    <td>13</td>
+                    <td>13</td>
+                </tr>
+                <tr>
+                    <td><img src="img/table-images/deadman-wonderland.bmp" class="table-img"></td>
+                    <td><span onclick="showDeadmanWonderlandInfo();" class="title">Deadman Wonderland</span></td>
+                    <td>7</td>
+                    <td>12</td>
+                    <td>12</td>
+                </tr>
+                <tr>
+                    <td><img src="img/table-images/death-parade.bmp" class="table-img"></td>
+                    <td><span onclick="showDeathParadeInfo();" class="title">Death Parade</span></td>
+                    <td>7</td>
+                    <td>12</td>
+                    <td>12</td>
+                </tr>
+                <tr>
+                    <td><img src="img/table-images/digimon-adventure.bmp" class="table-img"></td>
+                    <td><span onclick="showDigimonAdventureInfo();" class="title">Digimon Adventure</span></td>
+                    <td>7</td>
+                    <td>54</td>
+                    <td>54</td>
+                </tr>
+                <tr>
+                    <td><img src="img/table-images/digimon-adventure-02.bmp" class="table-img"></td>
+                    <td><span onclick="showDigimonAdventure02Info();" class="title">Digimon Adventure 02</span></td>
+                    <td>7</td>
+                    <td>50</td>
+                    <td>50</td>
+                </tr>
+                <tr>
+                    <td><img src="img/table-images/digimon-tri-1.bmp" class="table-img"></td>
+                    <td><span onclick="showDigimonTri1Info();" class="title">Digimon Adventure tri. 1: Saikai</span></td>
+                    <td>7</td>
+                    <td>1</td>
+                    <td>1</td>
+                </tr>
+                <tr>
+                    <td><img src="img/table-images/digimon-tri-2.bmp" class="table-img"></td>
+                    <td><span onclick="showDigimonTri2Info();" class="title">Digimon Adventure tri. 2: Ketsui</span></td>
+                    <td>7</td>
+                    <td>1</td>
+                    <td>1</td>
+                </tr>
+                <tr>
+                    <td><img src="img/table-images/doubutsu-no-mori.bmp" class="table-img"></td>
+                    <td><span onclick="showDoubutsuNoMoriInfo();" class="title">Doubutsu no Mori</span></td>
+                    <td>7</td>
+                    <td>1</td>
+                    <td>1</td>
+                </tr>
+                <tr>
+                    <td><img src="img/table-images/elfen-lied.bmp" class="table-img"></td>
+                    <td><span onclick="showElfenLiedInfo();" class="title">Elfen Lied</span></td>
+                    <td>7</td>
+                    <td>13</td>
+                    <td>13</td>
+                </tr>
+                <tr>
+                    <td><img src="img/table-images/grisaia-no-kajitsu.bmp" class="table-img"></td>
+                    <td><span onclick="showGrisaiaNoKajitsuInfo();" class="title">Grisaia no Kajitsu</span></td>
+                    <td>7</td>
+                    <td>13</td>
+                    <td>13</td>
+                </tr>
+                <tr>
+                    <td><img src="img/table-images/hinamatsuri.bmp" class="table-img"></td>
+                    <td><span onclick="showHinamatsuriInfo();" class="title">Hinamatsuri</span></td>
+                    <td>7</td>
+                    <td>12</td>
+                    <td>12</td>
+                </tr>
+                <tr>
+                    <td><img src="img/table-images/inazuma-eleven-go-chrono-stone.bmp" class="table-img"></td>
+                    <td><span onclick="showInazumaElevenGoChronoStoneInfo();" class="title">Inazuma Eleven Go: Chrono
+                            Stone</span></td>
+                    <td>7</td>
+                    <td>51</td>
+                    <td>51</td>
+                </tr>
+                <tr>
+                    <td><img src="img/table-images/kakegurui.bmp" class="table-img"></td>
+                    <td><span onclick="showKakeguruiInfo();" class="title">Kakegurui</span></td>
+                    <td>7</td>
+                    <td>12</td>
+                    <td>12</td>
+                </tr>
+                <tr>
+                    <td><img src="img/table-images/kimi-ni-todoke.bmp" class="table-img"></td>
+                    <td><span onclick="showKimiNiTodokeInfo();" class="title">Kimi ni Todoke</span></td>
+                    <td>7</td>
+                    <td>25</td>
+                    <td>25</td>
+                </tr>
+                <tr>
+                    <td><img src="img/table-images/kimi-ni-todoke-2.bmp" class="table-img"></td>
+                    <td><span onclick="showKimiNiTodoke2Info();" class="title">Kimi ni Todoke 2nd Season</span></td>
+                    <td>7</td>
+                    <td>12</td>
+                    <td>12</td>
+                </tr>
+                <tr>
+                    <td><img src="img/table-images/kokkoku.bmp" class="table-img"></td>
+                    <td><span onclick="showKokkokuInfo();" class="title">Kokkoku</span></td>
+                    <td>7</td>
+                    <td>12</td>
+                    <td>12</td>
+                </tr>
+                <tr>
+                    <td><img src="img/table-images/kokoro-connect.bmp" class="table-img"></td>
+                    <td><span onclick="showKokoroConnectInfo();" class="title">Kokoro Connect</span></td>
+                    <td>7</td>
+                    <td>13</td>
+                    <td>13</td>
+                </tr>
+                <tr>
+                    <td><img src="img/table-images/oregairu.bmp" class="table-img"></td>
+                    <td><span onclick="showOregairuInfo();" class="title">Oregairu</span></td>
+                    <td>7</td>
+                    <td>13</td>
+                    <td>13</td>
+                </tr>
+                <tr>
+                    <td><img src="img/table-images/oregairu-zoku.bmp" class="table-img"></td>
+                    <td><span onclick="showOregairuZokuInfo();" class="title">Oregairu Zoku</span></td>
+                    <td>7</td>
+                    <td>13</td>
+                    <td>13</td>
+                </tr>
+                <tr>
+                    <td><img src="img/table-images/pokemon.bmp" class="table-img"></td>
+                    <td><span onclick="showPokemonInfo();" class="title">Pokémon</span></td>
+                    <td>7</td>
+                    <td>276</td>
+                    <td>276</td>
+                </tr>
+                <tr>
+                    <td><img src="img/table-images/pokemon-xy.bmp" class="table-img"></td>
+                    <td><span onclick="showPokemonXYInfo();" class="title">Pokémon XY</span></td>
+                    <td>7</td>
+                    <td>93</td>
+                    <td>93</td>
+                </tr>
+                <tr>
+                    <td><img src="img/table-images/pokemon-xyz.bmp" class="table-img"></td>
+                    <td><span onclick="showPokemonXYZInfo();" class="title">Pokémon XY&Z</span></td>
+                    <td>7</td>
+                    <td>47</td>
+                    <td>47</td>
+                </tr>
+                <tr>
+                    <td><img src="img/table-images/relife.bmp" class="table-img"></td>
+                    <td><span onclick="showRelifeInfo();" class="title">ReLIFE</span></td>
+                    <td>7</td>
+                    <td>13</td>
+                    <td>13</td>
+                </tr>
+                <tr>
+                    <td><img src="img/table-images/steins-gate-0.bmp" class="table-img"></td>
+                    <td><span onclick="showSteinsGate0Info();" class="title">Steins;Gate 0</span></td>
+                    <td>7</td>
+                    <td>23</td>
+                    <td>23</td>
+                </tr>
+                <tr>
+                    <td><img src="img/table-images/tanaka-kun-wa-itsumo-kedaruge.bmp" class="table-img"></td>
+                    <td><span onclick="showTanakaKunWaItsumoKedarugeInfo();" class="title">Tanaka-kun wa Itsumo
+                            Kedaruge</span></td>
+                    <td>7</td>
+                    <td>12</td>
+                    <td>12</td>
+                </tr>
+                <tr>
+                    <td><img src="img/table-images/tokyo-ghoul-root-a.bmp" class="table-img"></td>
+                    <td><span onclick="showTokyoGhoulRootAInfo();" class="title">Tokyo Ghoul √A</span></td>
+                    <td>7</td>
+                    <td>12</td>
+                    <td>12</td>
+                </tr>
+                <tr>
+                    <td><img src="img/table-images/zankyou-no-terror.bmp" class="table-img"></td>
+                    <td><span onclick="showZankyouNoTerrorInfo();" class="title">Zankyou no Terror</span></td>
+                    <td>7</td>
+                    <td>11</td>
+                    <td>11</td>
+                </tr>
+                <tr>
+                    <td><img src="img/table-images/chaos-head.bmp" class="table-img"></td>
+                    <td><span onclick="showChaosHeadInfo();" class="title">ChäoS;HEAd</span></td>
+                    <td>6</td>
+                    <td>12</td>
+                    <td>12</td>
+                </tr>
+                <tr>
+                    <td><img src="img/table-images/digimon-data-squad.bmp" class="table-img"></td>
+                    <td><span onclick="showDigimonDataSquadInfo();" class="title">Digimon Data Squad</span></td>
+                    <td>6</td>
+                    <td>48</td>
+                    <td>48</td>
+                </tr>
+                <tr>
+                    <td><img src="img/table-images/digimon-fusion.bmp" class="table-img"></td>
+                    <td><span onclick="showDigimonFusionInfo();" class="title">Digimon Fusion</span></td>
+                    <td>6</td>
+                    <td>30</td>
+                    <td>30</td>
+                </tr>
+                <tr>
+                    <td><img src="img/table-images/digimon-tamers.bmp" class="table-img"></td>
+                    <td><span onclick="showDigimonTamersInfo();" class="title">Digimon Tamers</span></td>
+                    <td>6</td>
+                    <td>51</td>
+                    <td>51</td>
+                </tr>
+                <tr>
+                    <td><img src="img/table-images/gyakuten-saiban.bmp" class="table-img"></td>
+                    <td><span onclick="showGyakutenSaibanInfo();" class="title">Gyakuten Saiban: Sono "Shinjitsu", Igi
+                            Ari!</span></td>
+                    <td>6</td>
+                    <td>24</td>
+                    <td>24</td>
+                </tr>
+                <tr>
+                    <td><img src="img/table-images/inazuma-eleven-go.bmp" class="table-img"></td>
+                    <td><span onclick="showInazumaElevenGoInfo();" class="title">Inazuma Eleven Go</span></td>
+                    <td>6</td>
+                    <td>47</td>
+                    <td>47</td>
+                </tr>
+                <tr>
+                    <td><img src="img/table-images/inazuma-eleven-go-galaxy.bmp" class="table-img"></td>
+                    <td><span onclick="showInazumaElevenGoGalaxyInfo();" class="title">Inazuma Eleven Go: Galaxy</span></td>
+                    <td>6</td>
+                    <td>43</td>
+                    <td>43</td>
+                </tr>
+                <tr>
+                    <td><img src="img/table-images/inazuma-eleven-ares-no-tenbin.bmp" class="table-img"></td>
+                    <td><span onclick="showInazumaElevenAresNoTenbinInfo();" class="title">Inazuma Eleven: Ares no
+                            Tenbin</span></td>
+                    <td>6</td>
+                    <td>26</td>
+                    <td>26</td>
+                </tr>
+                <tr>
+                    <td><img src="img/table-images/inazuma-eleven-outer-code.bmp" class="table-img"></td>
+                    <td><span onclick="showInazumaElevenOuterCodeInfo();" class="title">Inazuma Eleven: Outer Code</span></td>
+                    <td>6</td>
+                    <td>6</td>
+                    <td>6</td>
+                </tr>
+                <tr>
+                    <td><img src="img/table-images/isshuukan-friends.bmp" class="table-img"></td>
+                    <td><span onclick="showIsshuukanFriendsInfo();" class="title">Isshuukan Friends.</span></td>
+                    <td>6</td>
+                    <td>12</td>
+                    <td>12</td>
+                </tr>
+                <tr>
+                    <td><img src="img/table-images/pokemon-black-and-white.bmp" class="table-img"></td>
+                    <td><span onclick="showPokemonBlackAndWhiteInfo();" class="title">Pokémon: Black & White</span></td>
+                    <td>6</td>
+                    <td>84</td>
+                    <td>84</td>
+                </tr>
+                <tr>
+                    <td><img src="img/table-images/pokemon-black-and-white-2.bmp" class="table-img"></td>
+                    <td><span onclick="showPokemonBlackAndWhite2Info();" class="title">Pokémon: Black & White: Rival
+                            Destinies</span></td>
+                    <td>6</td>
+                    <td>24</td>
+                    <td>24</td>
+                </tr>
+                <tr>
+                    <td><img src="img/table-images/poputepipikku.bmp" class="table-img"></td>
+                    <td><span onclick="showPoputepipikkuInfo();" class="title">Poputepipikku</span></td>
+                    <td>6</td>
+                    <td>12</td>
+                    <td>12</td>
+                </tr>
+                <tr>
+                    <td><img src="img/table-images/psycho-pass-2.bmp" class="table-img"></td>
+                    <td><span onclick="showPsychoPass2Info();" class="title">Psycho-Pass 2</span></td>
+                    <td>6</td>
+                    <td>11</td>
+                    <td>11</td>
+                </tr>
+                <tr>
+                    <td><img src="img/table-images/watamote.bmp" class="table-img"></td>
+                    <td><span onclick="showWataMoteInfo();" class="title">WataMote</span></td>
+                    <td>5</td>
+                    <td>12</td>
+                    <td>12</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <div id="title-page">
+        <p>Dit is de standaard HTML weergave!</p>
+        <img name="slide" width="100px" height="150">
+    </div>
+
+    <script src="js/anime_page.js"></script>
+    <script src="js/title_list.js"></script>
+    <script src="js/slideshow_list.js"></script>
+
+</body>
+
+</html>
