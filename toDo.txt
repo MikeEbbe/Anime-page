@@ -1,12 +1,16 @@
+TODO: 
+Add images to put in the slideshow
+
 HTML
 ----------------------------------------------------------------------
-Add good comments
 Make good menu buttons
 Add hq image for every title
 When clicked on the small image in the table go to hq image
 
 JavaScript
 ----------------------------------------------------------------------
-Make the menu buttons function (with JS)
-Add info about anime
-Add slideshow of anime images
+
+RestDB
+----------------------------------------------------------------------
+Search 4 wide images per title
+Add image titles to database
